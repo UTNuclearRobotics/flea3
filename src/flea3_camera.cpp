@@ -218,7 +218,7 @@ bool Flea3Camera::GrabImage(sensor_msgs::Image& image_msg) {
   const auto bayer_format = image.GetBayerTileFormat();
   const auto bits_per_pixel = image.GetBitsPerPixel();
   std::string encoding;
-  if (camera_info_.isColorCamera) {
+  if (true) {
     if (bayer_format != NONE) {
       encoding = BayerFormatToEncoding(bayer_format, bits_per_pixel);
     } else if (bits_per_pixel == 24) {

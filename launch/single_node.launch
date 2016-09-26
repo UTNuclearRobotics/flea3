@@ -1,7 +1,7 @@
 <launch>
   <!-- Common Interface -->
-  <arg name="device"/>
-  <arg name="rate" default="7.5"/>
+  <arg name="device" default="16306023"/>
+  <arg name="rate" default="10"/>
 
   <!-- Camera Settings -->
   <arg name="serial" default="$(arg device)"/>
@@ -30,7 +30,7 @@
 
   <!-- Node Settings -->
   <arg name="output" default="screen"/>
-  <arg name="proc" default="false"/>
+  <arg name="proc" default="true"/>
   <arg name="view" default="false"/>
   <arg name="image" default="image_raw"/>
   <arg name="calib" default="false"/>
